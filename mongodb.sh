@@ -13,11 +13,11 @@ VALIDATE(){
 
 ID=$(id -u)
 
-if [ ID -ne 0 ] ; then
-echo "You are not a root user"
-        exit 1
+if [ $ID -ne 0 ] ; then
+    echo "You are not a root user"
+    exit 1
     else
-echo "You are root user"
+    echo "You are root user"
 fi
 
 cp mongo.repo /etc/yum.repos.d/mongo.repo &>> LOGFILE
