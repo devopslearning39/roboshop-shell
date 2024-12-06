@@ -39,9 +39,6 @@ else
     echo "roboshop user is already there, so skipping adding the user"
 fi
 
-useradd roboshop
-VALIDATE $? "roboshop user adding "
-
 mkdir -p /app
 VALIDATE $? "app directory creation is "
 
