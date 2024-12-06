@@ -5,6 +5,9 @@ LOGFILE='/tmp/$TIMESTAMP-$0.log'
 VALIDATE(){
     if [ $1 -ne 0 ] ; then
     echo "Insatllation failed $2"
+    exit 1
+    else
+    echo "Installation success $2"
 }
 
 ID=$(id -u)
