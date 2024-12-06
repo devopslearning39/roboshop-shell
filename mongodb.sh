@@ -3,11 +3,12 @@
 TIMESTAMP=$(date +%f-%h-%m-%s)
 LOGFILE='/tmp/$TIMESTAMP-$0.log'
 VALIDATE(){
-    if [ $1 -ne 0 ] ; then
+ if [ $1 -ne 0 ] ; then
     echo "Insatllation failed $2"
     exit 1
     else
     echo "Installation success $2"
+    fi
 }
 
 ID=$(id -u)
