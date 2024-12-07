@@ -14,7 +14,7 @@ VALIDATE(){
 
 ID=$(id -u)
 
-if [ $ID -ne 0  ] ; then
+if [ $ID -ne 0 ] ; then
     echo "You are not root user"
     exit 1
 else
