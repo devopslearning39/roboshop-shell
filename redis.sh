@@ -30,7 +30,7 @@ VALIDATE $? "Enabling remi repo"
 dnf install redis -y
 VALIDATE $? "Installing remi repo"
 
-sed -i 's/127.0.0.1/0.0.0.0/g' etc/redis/redis.conf
+sed -i 's/127.0.0.1/0.0.0.0/g' /etc/redis/redis.conf
 
 systemctl enable redis
 VALIDATE $1 "Enabling of redis"
