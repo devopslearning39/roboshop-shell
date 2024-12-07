@@ -44,7 +44,7 @@ unzip /tmp/web.zip
 VALIDATE $? "unzipping web app folder"
 
 cp /home/centos/roboshop-shell/roboshop.conf /etc/nginx/default.d/roboshop.conf
-echo $? "Copying roboshop.conf file"
+VALIDATE $? "Copying roboshop.conf file"
 
 systemctl restart nginx
 VALIDATE $? "restarting nginx server"
