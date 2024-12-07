@@ -52,8 +52,8 @@ VALIDATE $? "Unzipping catalogue is "
 npm install
 VALIDATE $? "npm installation is "
 
-cp /root/roboshop-shell/catalogue.service /etc/systemd/system/catalogue.service
-VALIDATE $1 "Copying catalogue.service repo is "
+cp /home/centos/roboshop-shell/catalogue.service /etc/systemd/system/catalogue.service
+VALIDATE $? "Copying catalogue.service repo is "
 
 systemctl daemon-reload
 VALIDATE $? "daemon reload is "
