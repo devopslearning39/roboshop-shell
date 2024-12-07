@@ -8,7 +8,7 @@ VALIDATE(){
     if [ $1 -ne 0 ] ; then
         echo "$2 Failed"
         exit 1
-    esle
+    else
         echo "$2 Success"
     fi
 }
@@ -18,7 +18,7 @@ ID=$(id -u)
 if [ $ID -ne 0 ] ; then
     echo "Not a root user"
     exit 1
-esle
+else
     echo "You are a root user"
 fi
 
