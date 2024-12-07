@@ -1,7 +1,6 @@
 #!/bin/bash
 
 TIMESTAMP=$(date +%F-%H-%M-%S)
-echo "$TIMESTAMP"
 LOGFILE='/tmp/$0-$TIMESTAMP.LOG'
 
 VALIDATE(){
@@ -15,7 +14,7 @@ VALIDATE(){
 
 ID=$(id -u)
 
-if [ ID -ne 0 ] ;then
+if [ $ID -ne 0 ] ;then
     echo "Not a root user"
     exit 1
 else
