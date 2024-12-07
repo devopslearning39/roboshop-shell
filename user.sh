@@ -2,8 +2,7 @@
 
 TIMASTAMP=$(date +%F-%H-%M-%S)
 
-LOGFILE='tmp/$0-$TIMESTAMP'
-
+LOGFILE='/tmp/$0-$TIMESTAMP.log'
 
 VALIDATE(){
     if [ $1 -ne 0 ] ; then
