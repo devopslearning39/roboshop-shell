@@ -22,7 +22,7 @@ else
 fi
 
 dnf install https://rpms.remirepo.net/enterprise/remi-release-8.rpm -y
-VALIDATE $? "Installing remi repo"
+VALIDATE $? "Downloading of remi repo is"
 
 dnf module enable redis:remi-6.2 -y
 VALIDATE $? "Enabling remi repo"
