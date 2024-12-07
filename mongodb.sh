@@ -1,6 +1,6 @@
 #!/bin/bash
 
-TIMESTAMP=$(date +%f-%h-%m-%s)
+TIMESTAMP=$(date +%F-%H-%M-%S)
 LOGFILE='/tmp/$TIMESTAMP-$0.log'
 VALIDATE(){
  if [ $1 -ne 0 ] ; then
