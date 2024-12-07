@@ -36,7 +36,7 @@ id roboshop
 if [ $? -ne 0 ] ; then
     useradd roboshop
     echo "roboshop is user is does not exist...created now."
-esle
+else
     echo "roboshop user is already there, so skipping"
 fi
 
