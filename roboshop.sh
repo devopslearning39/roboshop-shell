@@ -8,7 +8,7 @@ SUBNET_ID=subnet-074e4b97d8b69706c
 aws ec2 run-instances --image-id $AMI --instance-type $INSTANCE_TYPE --security-group-ids $SECURITY_GROUP_ID --subnet-id $SUBNET_ID
 
 if [ $? -ne 0 ] ; then
-    echo "Created new instance successfully"
-else
     echo "Something went wrong please check ..!"
+else
+    echo "Created new instance successfully"
 fi
