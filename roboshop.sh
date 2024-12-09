@@ -6,7 +6,9 @@ SECURITY_GROUP_ID=sg-05014adf54dad41a6
 SUBNET_ID=subnet-074e4b97d8b69706c
 INSTANCE_NAME=cart
 
-aws ec2 run-instances --image-id $AMI --instance-type $INSTANCE_TYPE --security-group-ids $SECURITY_GROUP_ID --subnet-id $SUBNET_ID --tag-specifications 'ResourceType=instance,Tags=[{Key='Name',Value='$INSTANCE_NAME'}]' --query 'Instances[0].PrivateIpAddress' --output text
+IP_ADDRESS=(aws ec2 run-instances --image-id $AMI --instance-type $INSTANCE_TYPE --security-group-ids $SECURITY_GROUP_ID --subnet-id $SUBNET_ID --tag-specifications 'ResourceType=instance,Tags=[{Key='Name',Value='$INSTANCE_NAME'}]' --query 'Instances[0].PrivateIpAddress' --output text)
+
+echo "$INSTANCE_NAME PRIVATE IP_ADDRESS: $IP_ADDRESS"
 
 
 if [ $? -ne 0 ] ; then
