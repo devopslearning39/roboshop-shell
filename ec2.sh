@@ -5,7 +5,8 @@ SECURITY_GROUP_ID=sg-05014adf54dad41a6
 SUBNET_ID=subnet-074e4b97d8b69706c
 INSTANCE_NAME=("user" "cart" "shipping" "payment")
 
-for i in "${INSTANCE_NAME[@]}"
+
+for i in $"{INSTANCE_NAME[@]}"
 do
     if [ $i == "user" ] || [ $i == "cart" ] || [ $i == "shipping" ] ; then
         INSTANCE_TYPE=t2.micro
