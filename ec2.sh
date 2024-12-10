@@ -24,7 +24,7 @@ do
     # Creates route 53 records based on env name
 
     aws route53 change-resource-record-sets \
-    --hosted-zone-id HOSTED_ZONE_ID \
+    --hosted-zone-id $HOSTED_ZONE_ID \
     --change-batch '
     {
         "Comment": "Testing creating a record set"
