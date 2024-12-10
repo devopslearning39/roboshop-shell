@@ -28,7 +28,7 @@ do
     --hosted-zone-id $ZONE_ID \
     --change-batch '
     {
-        "Comment": "Creating a record set for $i"
+        "Comment": "Creating a record set for '$i'"
         ,"Changes": [{
         "Action"              : "CREATE"
         ,"ResourceRecordSet"  : {
