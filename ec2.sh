@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -e
+
 AMI_ID=ami-0b4f379183e5706b9
 SECURITY_GROUP_ID=sg-05014adf54dad41a6
 SUBNET_ID=subnet-074e4b97d8b69706c
