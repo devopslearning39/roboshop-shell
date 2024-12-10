@@ -11,3 +11,4 @@ if [ $? -ne 0 ] ; then
     echo "An error occured"
 else
     echo "Successfully created instance is : "
+fi
