@@ -11,6 +11,7 @@ do
         INSTANCE_TYPE=t2.micro
     else
         INSTANCE_TYPE=t2.small
+    fi
 done
 
 
