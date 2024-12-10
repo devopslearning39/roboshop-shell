@@ -12,5 +12,5 @@ IP_ADDRESS=$(IP_ADDRESS=$(aws ec2 run-instances --image-id $AMI_ID --instance-ty
 if [ $? -ne 0 ] ; then
     echo "An error occured"
 else
-    echo -e "Successfully created instance is : \n $INSTANCE_NAME : $"IP_ADDRESS
+    echo -e "Successfully created instance is : \n $INSTANCE_NAME : $IP_ADDRESS
 fi
